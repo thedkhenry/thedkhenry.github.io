@@ -1,86 +1,76 @@
-            html {
-                min-height: 100%;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                background: #0a0a0a;
-                background-repeat: no-repeat;
-                /*background: -webkit-radial-gradient(top left, #1e1e1e, black);
-                background: -moz-radial-gradient(top left, #1e1e1e, black);
-                background: -ms-radial-gradient(top left, #1e1e1e, black);
-                background: -o-radial-gradient(top left, #1e1e1e, black);
-                background: radial-gradient(top left, #1e1e1e, black);*/
-                font-family: 'Abel', sans-serif;
-                text-align: center;
-            }
-            
-            body {
-                color: white;
-                padding: 80px;
-                /* position: absolute;
-                top: 20%;
-                left: 50%;
-                margin-left: -100px; */
-            }
-            
-            h1 {
-                /* font-size: 225%; */
-                margin-top: 150px;
-            }
-            /* span{
-                font-size: small;
-            } */
-            
-            hr {
-                width: 200px;
-            }
-            
-            p {
-                font-family: 'Josefin+Sans', sans-serif;
-                font-style: oblique;
-            }
-            
-            div {
-                margin-top: 300px;
-                margin-bottom: 100px;
-            }
-            
-            h2 {
-                font-size: 170%;
-                margin-bottom: 10px;
-            }
-            
-            .topImg {
-                position: absolute;
-                z-index: 1;
-            }
-            
-            .bottomImg {
-                -webkit-filter: blur(0px);
-                filter: blur(0px);
-            }
-            
-            img {
-                margin: auto auto 50px auto;
-                width: 125px;
-                transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
-            }
-            
-            img:hover+.bottomImg {
-                -webkit-filter: blur(15px);
-                filter: blur(15px);
-            }
-            
-            .topImg:hover {
-                transform: scale(1.1);
-            }
-            
-            progress {
-                -webkit-appearance: none;
-                width: 200px;
-            }
-            
-            progress::-webkit-progress-value {
-                background: red;
-            }
+html {
+  min-height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: #0a0a0a;
+  background-repeat: no-repeat;
+  /*background: -webkit-radial-gradient(top left, #1e1e1e, black);
+    background: -moz-radial-gradient(top left, #1e1e1e, black);
+    background: -ms-radial-gradient(top left, #1e1e1e, black);
+    background: -o-radial-gradient(top left, #1e1e1e, black);
+    background: radial-gradient(top left, #1e1e1e, black);*/
+  font-family: "Abel", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 80px;}
+h1 {
+  margin-top: 150px;
+}
+h2 {
+  font-size: 170%;
+  margin-bottom: 10px;
+}
+p {
+  font-family: "Josefin+Sans", sans-serif;
+  font-style: oblique;
+}
+
+.container-work-links {
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+.link-social {
+  display: inline-block;
+  margin: 0 5px;
+}
+.topImg {
+  position: absolute;
+  z-index: 1;
+}
+.link-social:hover .topImg,
+.link-work:hover .topImg {
+  transform: scale(1.1);
+}
+.link-social:hover .bottomImg,
+.link-work:hover .bottomImg {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.bottomImg {
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+.link-social img {
+  width: 30px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.container-work-links img {
+  width: 125px;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+progress {
+  -webkit-appearance: none;
+  width: 200px;
+}
+progress::-webkit-progress-value {
+  background: red;
+}
+
+.bg{
+    height: max-content;
+    width: max-content;
+    background-color: aqua;
+}
